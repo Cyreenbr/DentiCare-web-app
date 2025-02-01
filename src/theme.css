@@ -1,0 +1,39 @@
+/* theme.css */
+:root {
+    /* Primary Color */
+    --primary-color: #8982BD;
+    /* Example: Purple */
+    --primary-color-light: #b5a1ffd1;
+    /* Lighter shade */
+    --primary-color-dark: #3e2c79dc;
+    /* Darker shade */
+
+    /* Background Colors */
+    --background-light: #ffffff;
+    /* White */
+    --background-dark: #f5f5f5;
+    /* Light gray */
+
+    /* Text Colors */
+    --text-primary: #2c3e50;
+    /* Dark gray */
+    --text-secondary: #7f8c8d;
+    /* Light gray */
+    --text-light: #ffffff;
+    /* White */
+
+    /* Button Colors */
+    --button-primary: var(--primary-color);
+    --button-primary-hover: #322D55;
+    /* Slightly darker shade */
+
+    /* Border Colors */
+    --border-color: #ddd;
+    /* Light gray */
+    --border-focus: var(--primary-color);
+    /* Primary color for focus states */
+
+    /* Other Colors */
+    --link-color: var(--primary-color);
+    --link-hover: var(--button-primary-hover);
+}

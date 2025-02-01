@@ -1,0 +1,25 @@
+/* Home.css */
+.home-container {
+    display: flex;
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+    background-color: var(--background-dark);
+}
+
+/* Main Content Area */
+.main-content {
+    flex: 1;
+    padding: 2rem;
+    background-color: var(--background-light);
+    color: var(--text-primary);
+}
+
+.main-content h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.main-content p {
+    font-size: 1rem;
+    color: var(--text-secondary);
+}
