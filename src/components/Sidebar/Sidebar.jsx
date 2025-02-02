@@ -1,56 +1,74 @@
-import React from "react";
-import { FaHome, FaCalendarAlt, FaUser, FaCog, FaSignOutAlt } from "react-icons/fa"; 
-import { NavLink } from "react-router-dom";
-import "./Sidebar.css"; 
+import {
+    FaHome,
+    FaCalendarAlt,
+    FaUser,
+    FaCog,
+    FaSignOutAlt
+}  from "react-icons/fa";
+import {
+    NavLink
+} from "react-router-dom";
+import "./Sidebar.css";
+import logo from "../../assets/logo.png";
 
-const Sidebar = () => {
-  return (
-     <div className="sidebar">
-        {/* User Info Section */}
-        <div className="user-info">
-          <h2>Welcome!</h2>
-          <p>Dr. Nesrine Berrbibe</p>
-        </div>
+const Sidebar=()=> {
+    return (<div className="sidebar" > <div className="sidebar-head" > {
+            /* Logo Section */
+        }
 
-        {/* Navigation Links */}
-        <nav className="sidebar-nav">
-          <ul>
-            <li>
-              <a href="/home" className="nav-link">
-                <FaHome className="nav-icon" />
-                <span>Home</span>
-              </a>
-            </li>
-            <li>
-              <a href="/appointments" className="nav-link">
-                <FaCalendarAlt className="nav-icon" />
-                <span>Appointments</span>
-              </a>
-            </li>
-            <li>
-              <a href="/patients" className="nav-link">
-                <FaUser className="nav-icon" />
-                <span>Patients</span>
-              </a>
-            </li>
-            <li>
-              <a href="/settings" className="nav-link">
-                <FaCog className="nav-icon" />
-                <span>Settings</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
+        <div className="logo-container" > <img src= {
+            logo
+        }
 
-        {/* Logout Button */}
-        <div className="logout">
-          <a href="/logout" className="nav-link">
-            <FaSignOutAlt className="nav-icon" />
-            <span>Logout</span>
-          </a>
-        </div>
-      </div>
-  );
+        alt="Logo" className="logo" /> </div> {
+            /* User Info Section */
+        }
+
+        <div className="user-info" > {
+            /*<h2>Welcome!</h2>*/
+        }
+
+        <p>Dr. Nesrine Berrbibe</p> </div> </div> {
+            /* Navigation Links */
+        }
+
+        <nav className="sidebar-nav" > <ul> <li> <NavLink to="/home" className= {
+            ({
+                isActive
+            })=> isActive ? "nav-link active" : "nav-link"
+    }
+
+    > <FaHome className="nav-icon" /> <span>Home</span> </NavLink> </li> <li> <NavLink to="/appointments" className= {
+        ({
+            isActive
+        })=> isActive ? "nav-link active" : "nav-link"
 }
+
+> <FaCalendarAlt className="nav-icon" /> <span>Appointments</span> </NavLink> </li> <li> <NavLink to="/patients" className= {
+    ({
+        isActive
+    })=> isActive ? "nav-link active" : "nav-link"
+}
+
+> <FaUser className="nav-icon" /> <span>Patients</span> </NavLink> </li> <li> <NavLink to="/settings" className= {
+    ({
+        isActive
+    })=> isActive ? "nav-link active" : "nav-link"
+}
+
+> <FaCog className="nav-icon" /> <span>Settings</span> </NavLink> </li> </ul> </nav> {
+    /* Logout Button */
+}
+
+<div className="logout" > <NavLink to="/logout" className= {
+    ({
+        isActive
+    })=> isActive ? "nav-link active" : "nav-link"
+}
+
+> <FaSignOutAlt className="nav-icon" /> <span>Logout</span> </NavLink> </div> </div>);
+}
+
+;
 
 export default Sidebar;
