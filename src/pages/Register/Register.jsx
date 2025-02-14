@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { FaUser, FaEnvelope, FaLock } from "react-icons/fa"; // Import icons
-import "./Register.css"; 
-import logo from "../../assets/logo.png"; 
+import { FaEnvelope, FaLock, FaUser } from "react-icons/fa"; // Import icons
+import logo from "../../assets/logo.png";
+import "./Register.css";
 
 function Register() {
   const [name, setName] = useState("");
@@ -77,7 +77,7 @@ function Register() {
           </div>
 
           {/* Sign Up Button */}
-          <button type="submit" className="login-button">
+          <button type="submit" className="login-button" >
             Sign Up
           </button>
 

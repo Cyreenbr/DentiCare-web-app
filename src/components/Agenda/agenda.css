@@ -1,0 +1,66 @@
+/* Style général du calendrier */
+.react-calendar {
+  background: none;
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Styles pour les jours */
+.react-calendar__tile {
+  position: relative;
+  background-color: none;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  color: rgb(9, 1, 20);
+  min-height: 100px;
+}
+
+/* Conteneur des rendez-vous */
+.appointments-container {
+  width: 100%;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Style des rendez-vous */
+.appointment {
+  background-color: #9594b4;
+  border-radius: 8px;
+  padding: 5px;
+  font-size: 12px;
+  text-align: center;
+  color: black;
+  width: 90%;
+  margin-bottom: 4px;
+  cursor: pointer;
+}
+
+.appointment:hover {
+  background-color: #9d6fce;
+}
+
+/* Styles pour les boutons actifs */
+.react-calendar__tile--active {
+  background-color: rgb(190, 188, 188);
+  border-color: #b2b2cf;
+  font-weight: bold;
+  color: black;
+}
+
+.react-calendar__navigation button {
+  color: black !important;
+  font-weight: bold;
+}
+
+.react-calendar__month-view__weekdays,
+.react-calendar__tile {
+  color: rgb(28, 3, 68) !important;
+}

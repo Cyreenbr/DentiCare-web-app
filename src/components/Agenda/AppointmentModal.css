@@ -1,0 +1,135 @@
+/* Fond de la modale */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Contenu de la modale */
+.modal-content {
+  position: relative;
+  background: rgb(235, 235, 245); /* Couleur douce */
+  padding: 25px;
+  border-radius: 8px;
+  width: 600px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  color: rgb(50, 50, 50);
+  font-family: Arial, sans-serif;
+  transition: 0.3s ease-in-out;
+}
+
+/* Bouton de fermeture en haut à droite */
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  background: none;
+  color: rgb(80, 80, 80);
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.close-btn:hover {
+  color: rgb(150, 150, 150);
+}
+
+/* Style des titres et labels */
+h3 {
+  text-align: center;
+  color: rgb(50, 50, 50);
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.modal-content label {
+  display: block;
+  font-weight: 500;
+  margin-top: 12px;
+  color: rgb(70, 70, 70);
+  font-size: 14px;
+}
+
+/* Champs de formulaire (blancs et sobres) */
+.modal-content input,
+.modal-content textarea {
+  width: 100%;
+  padding: 12px; /* Augmenter le padding pour donner plus d'espace à l'intérieur des champs */
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  background: rgb(255, 255, 255);
+  color: #333;
+  transition: border 0.2s ease-in-out;
+  box-sizing: border-box; /* Pour garantir que padding et border ne dépassent pas la largeur */
+}
+
+/* Effet de focus sur les champs */
+.modal-content input:focus,
+.modal-content textarea:focus {
+  border-color: rgb(150, 150, 150);
+  outline: none;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
+}
+
+.modal-content textarea {
+  height: 70px;
+  resize: none;
+}
+
+/* Conteneur des boutons */
+.modal-actions {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+/* Styles des boutons */
+.btn {
+  padding: 8px 14px;
+  border: 1px solid rgb(200, 200, 200);
+  border-radius: 4px;
+  cursor: pointer;
+  flex: 1;
+  font-size: 14px;
+  font-weight: 500;
+  background: none;
+  color: rgb(50, 50, 50);
+  transition: 0.2s ease-in-out;
+}
+
+/* Effet au survol des boutons */
+.btn:hover {
+  background: rgb(220, 220, 230);
+}
+
+/* Boutons spécifiques */
+.modify, .delete, .details, .save {
+  background: none;
+  color: rgb(50, 50, 50);
+}
+
+.modify:hover,
+.delete:hover,
+.details:hover,
+.save:hover {
+  background: rgb(230, 230, 240);
+}
+
+/* Bouton Sauvegarder */
+.save {
+  width: 100%;
+  margin-top: 10px;
+  font-weight: bold;
+}

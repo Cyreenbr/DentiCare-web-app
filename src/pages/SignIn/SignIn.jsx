@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaEnvelope, FaLock } from "react-icons/fa"; // Import icons
-import "./SignIn.css";
 import logo from "../../assets/logo.png";
+import "./SignIn.css";
 
 function SignIn() {
   const [email, setEmail] = useState("");

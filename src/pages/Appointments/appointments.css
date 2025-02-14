@@ -1,0 +1,12 @@
+.page-container {
+  display: flex;
+  height: 100vh;
+  background-color:whitesmoke;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column; /* Header au-dessus de l'agenda */
+}
+
