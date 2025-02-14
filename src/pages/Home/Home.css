@@ -1,17 +1,35 @@
 /* Home.css */
+
+/* Ensure the body takes up the full height and width without margins */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+/* Home Container */
 .home-container {
     display: flex;
     height: 100vh;
+    /* Full screen height */
+    width: 100vw;
+    /* Full screen width */
     font-family: "Poppins", sans-serif;
-    background-color: var(--background-dark);
+    background-color: rgba(190, 206, 250, 0.587);
+    overflow: hidden;
+    /* Prevents scrolling */
 }
 
 /* Main Content Area */
 .main-content {
     flex: 1;
     padding: 2rem;
-    background-color: var(--background-light);
+    background-color: rgba(255, 255, 255, 0.587);
     color: var(--text-primary);
+    height: 100%;
+    /* Ensures the main content takes full height */
 }
 
 .main-content h1 {
